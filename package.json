@@ -1,0 +1,54 @@
+{
+  "name": "leaflet-velocity-layer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/leaflet-velocity-layer.js",
+  "module": "dist/leaflet-velocity-layer.esm.js",
+  "type": "module",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "format": "prettier --write .",
+    "lint": "eslint --cache .",
+    "build": "pnpm run rollup",
+    "rollup": "rollup --config",
+    "watch": "rollup --config -w"
+  },
+  "keywords": [
+    "leaflet",
+    "canvas",
+    "map"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hotfudgecake/leaflet-velocity-layer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hotfudgecake/leaflet-velocity-layer/issues"
+  },
+  "homepage": "https://github.com/hotfudgecake/leaflet-velocity-layer#readme",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^38.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "leaflet": "^1.9.4",
+    "prettier": "3.0.2",
+    "rollup": "^3.28.1",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "leaflet": "^1.9.4"
+  },
+  "dependencies": {
+    "@types/leaflet": "^1.9.4",
+    "tslib": "^2.6.2"
+  }
+}
